@@ -2,37 +2,74 @@
 <html>
 <head>
 	<title>conversion de grados</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Cabin|Hind|Lora" rel="stylesheet">
 </head>
-<body style="background-color: green;">
+<body>
+	<style>
+		body{
+			margin-left:100px;
+			margin-right: 300px; 
+			background-color: #FE9A2E;
+		}
+		h1{
+			margin: 50px;
+			margin-left: 250px;
+			font-family:'Baloo Bhaina', cusive;
+			font-size: 100px;
+		}
+		h2{
+			font-family:'Hind', cusive;
+			font-size: 35px;
+		}
+		ol{
+
+		}
+		p{
+			font-family: 'Cabin', cusive;
+		}
+	</style>
 	<script type="text/javascript" src="archivo.js"></script>
-	<h1>¿Tienes problemas para convertir una cifra de grados centigrados a Celsius y visceversa?
-	<h2>Esta página lo hace todo por ti</h2>
-	<p><b>Instrucciones:</b> Para usar este página primero tiene que ser funcional, te avisaremos cuando ello suceda. Por lo pronto te explicamos el proceso de funcionalidad para que tengas una solución exitosa.</p>
-	<ol>
-		<li>Piensa en el número que quieras convertir</li><br>
-		<li>Piensa de que tipo de grados a que tipo de grados quieres convertir tu cifra</li><br>
-		<li>Ingresa la cifra en una sola casilla, por ejemplo</li><br>
-				<ul>
-					<li>Si quieres convertir 20°C a Farenheit <br>
-					deberás poner en la casilla Celsius el número '20' </li>
-					<li>Después debes darle clic al boton de conversión <br>
-					y esperar el resultado</li>
-				</ul><br>
-		<li>Listo, en teoría debería aparecerte el resultado en la otra casilla. ;)
-	</ol>
-	<table border="2">
-	    <tr>
-	      <td>Celsius</td>
-	      <td><input type="number" name="celsius" id="celsius"></td>
-	      <td><button type="button" onclick="convertirAfarenheit();" return="false"><label>Convertir Farenheit</label></button></td>
+	
+	<h1>FarenhtCels</h1>
+	<h2>Conversión de grados en Farenheit y Celsius</h2>
+
+	<table>
+		<td>
+		<tr>
+			<p><b>Instrucciones:</b> <br>
+			Estamos muy felices de informarte que ésta página funciona exitosamente. ¡Disfrútala!</p>
+			<ol>
+				<li>Piensa en el número que quieras convertir</li><br>
+				<li>Piensa tu unidad de conversión (celsius, farenheit).</li><br>
+				<li>Ingresa la cifra en una sola casilla, por ejemplo</li><br>
+						<ul>
+								<li>Ingresa 20 en la casilla Celsius</li>
+								<li>Dale click al botón de conversión</li>
+								<li>Espera el resultado en la casilla Farenheit</li>
+						</ul><br>
+				<li>Listo convierte todas las cifras que quieras ;)
+			</ol>
+		</tr> 
+			</td>
+			<td>
+			<table border="2">
+	 		   	<tr>
+	    		  <td>Celsius</td>
+	    		  <td><input type="number" name="celsius" id="celsius"></td>
+	     		  <td><button type="button" onclick="convertirAfarenheit();" return="false"><label>Convertir Farenheit</label></button></td>
 	    
-	    </tr>
-	    <tr>
-	      <td>Farenheit</td>
-	      <td><input type="number" name="farenheit" id="farenheit"></td>
-	      <td><button type="button" onclick="convertirAcelsius()" return="false">  Convertir Celsius </button></td>
-   	
+	   		    </tr>
+	   			<tr>
+	      		  <td>Farenheit</td>
+	      		  <td><input type="number" name="farenheit" id="farenheit"></td>
+	     		  <td><button type="button" onclick="convertirAcelsius()" return="false">  Convertir Celsius </button></td>
+   				</tr>
+   			</td>
 	</table>
+
+		
+	
+	
 
 
 </body>
